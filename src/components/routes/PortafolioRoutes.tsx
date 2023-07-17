@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
-import {HomeIndex} from "../../pages/main/HomeIndex";
+import {HomeIndex} from "../../pages/main/components/HomeIndex";
 
 const AppRoutes = () => {
     console.log('hola');
