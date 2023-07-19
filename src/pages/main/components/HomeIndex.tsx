@@ -1,13 +1,19 @@
 import Header from "./HomeHeader";
 import HomeBanner from "./HomeBanner";
-import HomeContent from "./HomeContent";
+import HomeSummary from "./HomeSummary";
+import HomeAreas from "./HomeAreas";
+import HomeSkills from "./HomeSkills";
+import HomeExperience from "./HomeExperience";
 
 const HomeIndex = () => {
     return (
         <div className={"HomeIndex"}>
             <Header/>
             <HomeBanner/>
-            <HomeContent/>
+            <HomeSummary/>
+            <HomeAreas/>
+            <HomeSkills/>
+            <HomeExperience/>
         </div>
     );
 };

@@ -1,0 +1,51 @@
+.HomeIndex .Header-Nav-Links {
+    text-decoration: none;
+    font: normal normal bold 20px/24px Noto Sans;
+}
+
+.HomeIndex .Header-Nav-Links .Link-Icon {
+    margin-right: 4px;
+    height: 25px;
+    width: 25px;
+}
+
+.HomeIndex .Header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: #f4f4f4;
+}
+
+.HomeIndex .Header .Navigation-Bar {
+    list-style: none;
+    color: #23262c;
+}
+
+.HomeIndex .Header .Navigation-Bar a:visited {
+    color: #23262c;
+}
+
+.HomeIndex .Header .Navigation-Bar li {
+    position: relative;
+}
+
+.HomeIndex .Header .Navigation-Bar li:hover {
+    position: relative;
+    margin-right: 20px;
+}
+
+.HomeIndex .Header .Navigation-Bar li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #f4f4f4;
+}
+
+.HomeIndex .Header .Navigation-Bar li:hover > ul {
+    display: block;
+}
+
+.HomeIndex .Header .Navigation-Bar .Contact-Button {
+    font: normal normal normal 18px/22px Noto Sans;
+}
