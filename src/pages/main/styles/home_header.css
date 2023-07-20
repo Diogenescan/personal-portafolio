@@ -1,0 +1,65 @@
+.HomeIndex .Header {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    padding: 0 64px 0 64px;
+    height: 120px;
+    width: 100%;
+    background-color: #f4f4f4;
+}
+
+.HomeIndex .Header .Navigation-Bar {
+    margin-left: 96px;
+    margin-right: 96px;
+    width: 100%;
+}
+
+.HomeIndex .Header .Navigation-Bar .Container {
+    background-color: #f4f4f4;
+}
+
+.HomeIndex .Header .Navigation-Bar .Container .Brand {
+    font: normal normal bold 26px/30px Noto Sans;
+}
+
+.HomeIndex .Header .Navigation-Bar .Container .Brand .Logo {
+    margin-right: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.HomeIndex .Header .Navigation-Bar .Container .Header-Nav-Links {
+    margin-left: auto;
+    font: normal normal 600 20px/24px Noto Sans;
+}
+
+.HomeIndex .Header .Navigation-Bar .Container .Header-Nav-Links .dropdown-menu {
+    background-color: #f4f4f4;
+}
+
+.HomeIndex .Header .Navigation-Bar .Container .Header-Nav-Links .Nav-Item {
+    position: relative;
+    display: inline-block;
+}
+
+.HomeIndex .Header .Navigation-Bar .Container .Header-Nav-Links .Nav-Item::before {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    background-color: #000;
+    transition: width 0.8s ease, left 0.8s ease;
+}
+
+.HomeIndex .Header .Navigation-Bar .Container .Header-Nav-Links .Nav-Item:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.HomeIndex .Header .Navigation-Bar .Container .Contact-Button {
+    margin-left: 10px;
+    font: normal normal normal 18px/22px Noto Sans;
+}

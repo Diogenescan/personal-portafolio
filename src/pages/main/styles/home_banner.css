@@ -1,0 +1,11 @@
+.HomeIndex .Banner {
+    height: 600px;
+    background-image: url("../../../assets/images/banner/index-banner-image.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.HomeIndex .Banner .Content .Title {
+    font: normal normal bold 40px/56px Noto Sans;
+    color: 	#000000;
+}

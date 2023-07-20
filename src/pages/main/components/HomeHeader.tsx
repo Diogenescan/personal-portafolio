@@ -1,63 +1,49 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
 
-import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Container from 'react-bootstrap/Container';
 import Button from "react-bootstrap/Button";
-import {House, FileText, BarChart, Terminal, Tools, Person} from "react-bootstrap-icons";
 
-import '../styles/home.css';
+import logo from '../../../assets/images/logo/my_logo.png';
 
-interface IconProps {
-    className?: string;
-}
-
-interface NavigationLinkProps {
-    path: string;
-    icon: React.ComponentType<IconProps>;
-    label: string;
-}
-
-const NavigationHeaderLink = React.memo<NavigationLinkProps>((
-    {
-        path,
-        icon: Icon,
-        label
-    }) => {
-    return (
-        <NavLink to={path} className="Header-Nav-Links" reloadDocument={true}>
-            <Icon className="Link-Icon"/>
-            <span className={"Link-Label"}>{label}</span>
-        </NavLink>
-    );
-});
+import '../styles/home_header.css';
 
 const Header = () => {
     return (
         <header className="Header">
-            <Navbar className="Navigation-Bar">
-                <Container>
-                    <NavigationHeaderLink path={"/personal-portafolio"} icon={House} label={"Home"}/>
-                    <NavDropdown
-                        title={<NavigationHeaderLink path="/personal-portafolio/projects" icon={FileText} label={"Projects"}/>}
-                        id="header-navigation-items-projects">
-                        <NavDropdown.Item>
-                            <NavigationHeaderLink path="/personal-portafolio/projects/development" icon={Terminal} label={"Software Engineering"}/>
-                        </NavDropdown.Item>
-                        <NavDropdown.Item>
-                            <NavigationHeaderLink path="/personal-portafolio/projects/data" icon={BarChart} label={"Data Science"}/>
-                        </NavDropdown.Item>
-                        <NavDropdown.Item>
-                            <NavigationHeaderLink path="/personal-portafolio/projects/other" icon={Tools} label={"Others"}/>
-                        </NavDropdown.Item>
-                    </NavDropdown>
-                    <NavigationHeaderLink path="/personal-portafolio/about" icon={Person} label={"About Me"}/>
-                    <Button
-                        className={"Contact-Button"}
-                        variant={"outline-primary"}>
-                        Contacto
-                    </Button>
+            <Navbar className="Navigation-Bar" expand="lg">
+                <Container className={"Container"}>
+                    <Navbar.Brand className={"Brand"}>
+                        <a href={"https://ncatlab.org/nlab/show/Kochen-Specker+theorem"}>
+                            <img className="Logo" src={logo} alt="K.S Logo"/>
+                        </a>
+                        S. Pérez
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="index-header-navbar-items" />
+                    <Navbar.Collapse id="index-header-navbar-items">
+                        <Nav className="Header-Nav-Links">
+                            <Nav.Link className={"Nav-Item"} href="/personal-portafolio">Home</Nav.Link>
+                            <NavDropdown className={"Nav-Item"} id={"index-header-nav-items-dropdown"} title={"Projects"}>
+                                <NavDropdown.Item className={"Dropdown-Item"} href={"/personal-portafolio/projects/development"}>
+                                    Software Engineering
+                                </NavDropdown.Item>
+                                <NavDropdown.Item className={"Dropdown-Item"} href={"/personal-portafolio/projects/data"}>
+                                    Data Science
+                                </NavDropdown.Item>
+                                <NavDropdown.Item className={"Dropdown-Item"} href={"/personal-portafolio/projects/other"}>
+                                    Others
+                                </NavDropdown.Item>
+                            </NavDropdown>
+                            <Nav.Link className={"Nav-Item"} href="/personal-portafolio/about">About me</Nav.Link>
+                            <Button
+                                className={"Contact-Button"}
+                                variant={"outline-dark"}>
+                                Contact Me
+                            </Button>
+                        </Nav>
+                    </Navbar.Collapse>
                 </Container>
             </Navbar>
         </header>
