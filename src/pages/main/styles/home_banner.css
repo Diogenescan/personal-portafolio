@@ -5,7 +5,66 @@
     background-position: center;
 }
 
+.HomeIndex .Banner .Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 20, 30, 0.75);
+}
+
 .HomeIndex .Banner .Content .Title {
-    font: normal normal bold 40px/56px Noto Sans;
-    color: 	#000000;
+    font: normal normal bold 40px/56px Poppins;
+    text-shadow: 4px 6px 6px rgba(10, 30, 50, 1);
+    color:  #f2f3f4;
+}
+
+.HomeIndex .Banner .Content .Subtitle {
+    font: normal normal normal 22px/28px Poppins;
+    text-shadow: 2px 2px 4px rgba(10, 30, 50, 1);
+    color: #f2f3f4;
+}
+
+.HomeIndex .Banner .Content .Skills  {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    width: 1000px;
+    gap: 6px;
+}
+
+.HomeIndex .Banner .Content .Skills .Nav {
+    text-decoration: none;
+    color: #f2f3f4;
+}
+
+.HomeIndex .Banner .Content .Skills .Items {
+    font: normal normal normal 22px/28px Noto Sans;
+    text-shadow: 2px 2px 4px rgba(10, 30, 50, 1);
+    color: #f2f3f4;
+    background-color: rgba(230, 230, 230, 0.1);
+    border: #000000 solid 2px;
+}
+
+.HomeIndex .Banner .Content .Skills .Items .Icon {
+    margin: auto;
+}
+
+.HomeIndex .Banner .Content .Skills #dev .Icon {
+    height: 100px;
+    width: 100px;
+}
+
+.HomeIndex .Banner .Content .Skills #data .Icon {
+    margin-top: 10px;
+    height: 100px;
+    width: 200px;
+}
+
+.HomeIndex .Banner .Content .Skills #other .Icon {
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
 }

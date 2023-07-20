@@ -1,3 +1,7 @@
+import dev from '../assets/images/services/dev.png';
+import data from '../assets/images/services/data.png';
+import other from '../assets/images/services/other.png';
+
 import python from '../assets/images/tech/python.png';
 import c_plus from '../assets/images/tech/c++.png';
 import javascript from '../assets/images/tech/javascript.png';
@@ -21,7 +25,12 @@ import qbytes from '../assets/images/work/qbytes.png';
 const banner = {
     title: "My name is Santiago Pérez",
     subtitle: "Welcome to my personal portafolio. Here you will find some of my public projects regarding:",
-    skills: ["Software Engineering", "Data Science, Machine learning and Statistics", "Physics, Quantum Computing and Math"]
+    skills: {
+        'name': ["Software Engineering", "Data Science, Machine learning and Statistics", "Physics, Quantum Computing and Math"],
+        'id': ['dev', 'data', 'other'],
+        'icon': [dev, data, other],
+        'path' : ['/personal-portafolio/projects/development', '/personal-portafolio/projects/data', '/personal-portafolio/projects/other']
+    }
 }
 
 const technologies = [
