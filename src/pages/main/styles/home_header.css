@@ -4,7 +4,7 @@
     justify-content: space-between;
     top: 0;
     padding: 0 64px 0 64px;
-    height: 120px;
+    height: 100px;
     width: 100%;
     background-color: #f4f4f4;
     z-index: 1000;
@@ -26,8 +26,8 @@
 
 .HomeIndex .Header .Navigation-Bar .Container .Brand .Logo {
     margin-right: 10px;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
 }
 
 .HomeIndex .Header .Navigation-Bar .Container .Header-Nav-Links {

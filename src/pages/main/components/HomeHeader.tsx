@@ -13,7 +13,7 @@ import '../styles/home_header.css';
 const Header = () => {
     return (
         <header className="Header">
-            <Navbar className="Navigation-Bar" expand="lg">
+            <Navbar className="Navigation-Bar" expand="md">
                 <Container className={"Container"}>
                     <Navbar.Brand className={"Brand"}>
                         <a href={"https://ncatlab.org/nlab/show/Kochen-Specker+theorem"}>
@@ -36,7 +36,6 @@ const Header = () => {
                                     Others
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link className={"Nav-Item"} href="/personal-portafolio/about">About me</Nav.Link>
                             <Button
                                 className={"Contact-Button"}
                                 variant={"outline-dark"}>

@@ -1,0 +1,47 @@
+.HomeIndex .Areas .Content {
+    padding: 90px 90px 90px 90px;
+}
+
+.HomeIndex .Areas .Content .Introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.HomeIndex .Areas .Content .Introduction .Title {
+    font: normal normal bold 40px/56px Poppins;
+}
+
+.HomeIndex .Areas .Introduction .Subtitle {
+    font: normal normal 500 18px/24px Noto Sans;
+}
+
+.HomeIndex .Areas .Content .Specific-Area {
+    position: relative;
+    height: 500px;
+}
+
+.HomeIndex .Areas .Content .Specific-Area .Image {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.HomeIndex .Areas .Content .Specific-Area .Text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: #212529;
+}
+
+.HomeIndex .Areas .Content .Specific-Area .Text .Caption-Title {
+    font: normal normal bold 30px/56px Poppins;
+}
+
+.HomeIndex .Areas .Content .Specific-Area .Text .Caption-Description {
+    font: normal normal bold 18px/24px Noto Sans;
+}

@@ -12,8 +12,6 @@ const HomeIndex = () => {
             <HomeBanner/>
             <HomeSummary/>
             <HomeAreas/>
-            <HomeSkills/>
-            <HomeExperience/>
         </div>
     );
 };

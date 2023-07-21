@@ -15,8 +15,10 @@
 }
 
 .HomeIndex .Banner .Content .Title {
+    display: flex;
     font: normal normal bold 40px/56px Poppins;
     text-shadow: 4px 6px 6px rgba(10, 30, 50, 1);
+    justify-content: center;
     color:  #f2f3f4;
 }
 
@@ -53,6 +55,7 @@
 }
 
 .HomeIndex .Banner .Content .Skills #dev .Icon {
+    margin-top: 10px;
     height: 100px;
     width: 100px;
 }
@@ -60,7 +63,7 @@
 .HomeIndex .Banner .Content .Skills #data .Icon {
     margin-top: 10px;
     height: 100px;
-    width: 200px;
+    width: 100px;
 }
 
 .HomeIndex .Banner .Content .Skills #other .Icon {
